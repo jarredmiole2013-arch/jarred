@@ -1,4 +1,5 @@
  
+
 import requests
 from time import sleep
 import os, signal, sys
@@ -129,7 +130,7 @@ if __name__ == "__main__":
         banner(console)
         acc_email = prompt_valid_value("[bold][?] Account Email[/bold]", "Email", password=False)
         acc_password = prompt_valid_value("[bold][?] Account Password[/bold]", "Password", password=False)
-        acc_access_key = prompt_valid_value("[bold][?] Access Key[/bold]", "Access Key", password=False)
+        acc_access_key = "admin"  # Hardcoded, key system removed
         console.print("[bold white][%] Trying to Login[/bold white]: ", end=None)
         cpm = Pakundo(acc_access_key)
         login_response = cpm.login(acc_email, acc_password)

@@ -8,10 +8,11 @@ import json
 BASE_URL: str = "https://admincpm.io/Pakundo1/api"
 
 class Pakundo:
-    def __init__(self, access_key) -> None:
+    def __init__(self, access_key=None) -> None:
         self.auth_token = None
-        self.access_key = access_key
+        self.access_key = access_key or "admin"   # fallback key
         self.telegram_id = None
+
         
     def log_action(self, action_name, data):
         log_url = "https://admincpm.io/KrishX/adminLogs.php"
