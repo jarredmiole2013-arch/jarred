@@ -10,7 +10,7 @@ from rich.style import Style
 import pystyle
 from pystyle import Colors, Colorate
 
-from gideonvip import Pakundo
+from jarred import Pakundo
 
 def signal_handler(sig, frame):
     print("\n Bye Bye...")
